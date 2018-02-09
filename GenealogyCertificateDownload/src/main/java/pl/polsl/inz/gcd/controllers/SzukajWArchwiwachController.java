@@ -47,13 +47,15 @@ public class SzukajWArchwiwachController {
 		String downloadType = downloadForm.getDownloadType();
 		if(downloadType.equals("singleCertificate")) {
 			downloadCertificatesService.downloadCertificate(downloadForm.getLinkToCertificate());
+			return "redirect:/szukajwarchiwach/download_single_certificate";
 		}
 		else {
 			downloadCertificatesService.downloadCertificatesBook(downloadForm.getLinkToCertificate());
+			return "redirect:/szukajwarchiwach//download_zip";
 		}
 		
         
-		return "redirect:/szukajwarchiwach/download_single_certificate";
+		
 	}
 	
 	@RequestMapping(value = "/download_single_certificate", method = RequestMethod.GET)
@@ -69,6 +71,18 @@ public class SzukajWArchwiwachController {
 	    IOUtils.copy(in, response.getOutputStream());
 	    //response.getOutputStream().flush();
 	    //response.getOutputStream().getFD().sync();
+	}
+	
+	@RequestMapping(value = "/download_zip", method = RequestMethod.GET)
+	public void getZipAsByteArray(HttpServletResponse response) throws IOException {
+		InputStream in;
+		String path = "/WEB-INF/images/" + "test2.zip";
+	    while( (in = servletContext.getResourceAsStream(path)) == null)
+
+	    response.setContentType(MediaType.APPLICATION_OCTET_STREAM_VALUE);
+	    response.setHeader( "Content-Disposition", "attachment;filename=" + "testzipowy.zip" );
+	    response.setHeader("Content-Length", String.valueOf(new File(path).length()));
+	    IOUtils.copy(in, response.getOutputStream());
 	}
 	
 }
