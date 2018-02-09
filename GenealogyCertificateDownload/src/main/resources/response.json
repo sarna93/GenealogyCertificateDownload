@@ -1,0 +1,102 @@
+{
+   "bibliographicCitation": "\"Poland, Radom Roman Catholic Church Books, 1587-1966,\" database with images, <i>FamilySearch</i> (https://familysearch.org/pal:/MM9.3.1/TH-1-16939-74915-93?cc=1407440&wc=9R18-W3F : 17 July 2014), Kielce > Janowiec > Marriages (Akta małżeństw) 1926-1935 > image 1 of 151; Catholic Church parishes in Radom Diocese, Czestochowa.",
+   "creator": [
+      "familysearch.org"
+   ],
+   "format": {
+      "value": "application/sord+xml"
+   },
+   "identifier": {
+      "value": "https://familysearch.org/pal:/MM9.3.1/TH-1-16939-74915-93?cc=1407440&wc=9R18-W3F"
+   },
+   "isPartOf": {
+      "identifier": {
+         "value": "https://familysearch.org/recapi/sord/waypoint/9R18-W3F:21713801,33078401,33409801?cc=1407440"
+      },
+      "isPartOf": {
+         "identifier": {
+            "value": "https://familysearch.org/recapi/sord/waypoint/9R1Q-PTG:21713801,33078401?cc=1407440"
+         },
+         "isPartOf": {
+            "identifier": {
+               "value": "https://familysearch.org/recapi/sord/waypoint/9RB1-PTL:21713801?cc=1407440"
+            },
+            "isPartOf": {
+               "identifier": {
+                  "value": "https://familysearch.org/recapi/sord/collection/1407440/waypoints"
+               },
+               "isPartOf": {
+                  "identifier": {
+                     "value": "https://www.familysearch.org/recapi/sord/collection/1407440"
+                  },
+                  "title": [
+                     {
+                        "value": "Poland, Radom Roman Catholic Church Books, 1587-1966",
+                        "lang": "en-US"
+                     }
+                  ],
+                  "type": "COLLECTION"
+               },
+               "title": [
+                  {
+                     "value": "Poland, Radom Roman Catholic Church Books, 1587-1966",
+                     "lang": "en-us"
+                  }
+               ],
+               "type": "CONTAINER"
+            },
+            "title": [
+               {
+                  "value": "Kielce",
+                  "lang": "en-US"
+               }
+            ],
+            "type": "CONTAINER"
+         },
+         "title": [
+            {
+               "value": "Janowiec",
+               "lang": "en-US"
+            }
+         ],
+         "type": "CONTAINER"
+      },
+      "title": [
+         {
+            "value": "Marriages (Akta małżeństw) 1926-1935",
+            "lang": "en-US"
+         }
+      ],
+      "type": "CONTAINER",
+      "offsetInParent": 0
+   },
+   "language": {
+      "value": "en-US"
+   },
+   "title": [
+      {
+         "value": "Poland, Radom Roman Catholic Church Books, 1587-1966; pal:/MM9.3.1/TH-1-16939-74915-93",
+         "lang": "en-us"
+      }
+   ],
+   "type": "IMAGE",
+   "properties": [
+      {
+         "value": "https://familysearch.org/pal:/MM9.3.1/TH-1-16939-76067-38?cc=1407440&wc=9R18-W3F",
+         "type": "org.familysearch.records.next_image"
+      },
+      {
+         "value": "151",
+         "type": "org.familysearch.records.image_count"
+      }
+   ],
+   "accessControl": {
+      "restricted": false,
+      "allowDownload": true,
+      "allowPrint": true,
+      "access": {
+         "authorized": true,
+         "failedRoles": []
+      }
+   }
+}
