@@ -81,15 +81,13 @@ public class SWADownloadCertificatesService implements DownloadCertificatesServi
 		imagesFileNames = new ArrayList<>();
 		
 		System.out.println("\n\n\n\n\n\n\n\n\n");
-		int i = 0;
-		while(urlToCertificatePage != null && i < 3) {
+		while(urlToCertificatePage != null) {
 			System.out.println(urlToCertificatePage);
 			String urlToCertificateDownload = urlToCertificatePage.replace("full", "save");
 			setImageFileName(urlToCertificatePage, urlToCertificateDownload);
 			imagesFileNames.add(imageFileName);
 			downloadSingleImage(urlToCertificateDownload);
 			urlToCertificatePage = getUrlToNextCertificatePage(urlToCertificatePage);
-			i++;
 		}
 		
 		try {
