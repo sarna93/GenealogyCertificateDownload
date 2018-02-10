@@ -6,7 +6,7 @@
 
 <!-- Access the bootstrap Css like this,
 		Spring boot will handle the resource mapping automcatically -->
-<link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css"
+<link href="<c:url value = "/webjars/bootstrap/3.3.7/css/bootstrap.min.css"/>"
         rel="stylesheet">
 
 <!--
@@ -43,8 +43,8 @@
 
 		</div>
 
-		<script src="webjars/jquery/1.9.1/jquery.min.js"></script>
-        <script src="webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/webjars/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="/webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 
 </html>

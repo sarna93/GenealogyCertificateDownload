@@ -7,7 +7,7 @@
 <!-- Access the bootstrap Css like this,
 		Spring boot will handle the resource mapping automcatically -->
 <link rel="stylesheet" type="text/css"
-	href="webjars/bootstrap/3.3.7/css/bootstrap.min.css" />
+	href="<c:url value = "/webjars/bootstrap/3.3.7/css/bootstrap.min.css"/>" />
 
 <!--
 	<spring:url value="/css/main.css" var="springCss" />
@@ -61,8 +61,8 @@
 		<button type="submit" action= class="btn btn-primary">Submit</button>
 	</form>
 
-	<script type="text/javascript"
-		src="webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/webjars/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="/webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </body>
 
