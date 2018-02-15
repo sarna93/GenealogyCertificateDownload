@@ -4,15 +4,10 @@
 <html lang="en">
 <head>
 
-<!-- Access the bootstrap Css like this,
-		Spring boot will handle the resource mapping automcatically -->
+<!-- Access the bootstrap  -->
 <link href="<c:url value = "/webjars/bootstrap/3.3.7/css/bootstrap.min.css"/>"
         rel="stylesheet">
 
-<!--
-	<spring:url value="/css/main.css" var="springCss" />
-	<link href="${springCss}" rel="stylesheet" />
-	 -->
 <c:url value="/css/main.css" var="jstlCss" />
 <link href="${jstlCss}" rel="stylesheet" />
 
@@ -36,9 +31,9 @@
 
 		<div class="container">
 
-			<div class="starter-template">
-				<h1>Spring Boot Web JSP Example</h1>
-				<h2>Message: ${message}</h2>
+			<div class="starter-template text-center">
+				<h1>${message}</h1>
+				<h2></h2>
 			</div>
 
 		</div>
